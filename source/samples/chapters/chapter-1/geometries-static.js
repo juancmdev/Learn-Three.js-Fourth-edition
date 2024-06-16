@@ -8,11 +8,10 @@ const props = {
 };
 
 initScene(props)(({ scene, camera, renderer, orbitControls }) => {
-  
   const geometry = new THREE.BoxGeometry();
-  const cubeMaterial = new THREE.MeshPhongMaterial({ color: 0xFF00FF });
+  const cubeMaterial = new THREE.MeshPhongMaterial({ color: 0xff00ff });
   const cube = new THREE.Mesh(geometry, cubeMaterial);
-  
+
   cube.position.x = -1;
   cube.castShadow = true;
   scene.add(cube);
